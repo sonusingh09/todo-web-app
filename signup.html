@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <div id="message">
+      <p id="userAlreadyExist">Username already exist. Try another.</p>
+      <p id="wrong-email">Wrong email. Please provide a valid email.</p>
+      <p id="emailAlreadyExist">
+        The Email you provided already exist. Try another.
+      </p>
+      <p id="passNotMatch">The password didn't match.</p>
+    </div>
+
+    <form action="" id="container">
+      <p class="reg">sign up</p>
+
+      <input
+        type="text"
+        class="inp usr"
+        placeholder="Username"
+        id="username"
+        required
+      />
+      <input class="inp" type="email" placeholder="Email" id="email" required />
+      <input
+        class="inp"
+        type="password"
+        placeholder="Password"
+        id="pass"
+        required
+      />
+      <input
+        class="inp"
+        type="password"
+        placeholder="Confirm Password"
+        id="confirm-pass"
+        required
+      />
+      <input class="sub" type="submit" value="Register" id="btn-reg" />
+    </form>
+    
+    <script src="./signup.js"></script>
+  </body>
+</html>

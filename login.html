@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div id="no-user">
+      <p>Username doesn't exist. Want to create a new:</p>
+      <a href="./signup.html">Signup</a>
+    </div>
+    <div id="wrong-pass"><p>Password is wrong.</p></div>
+    <h1 id="login">Login</h1>
+    <form action="" id="form-cont">
+      <input
+        type="text"
+        name="UserName"
+        placeholder="Username"
+        class="form-field"
+        id="userName"
+        required="true"
+      />
+
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        class="form-field"
+        id="password"
+        required
+      />
+
+      <input type="submit" value="Login" id="reg" />
+    </form>
+    
+    <script src="./login.js"></script>
+  </body>
+</html>
